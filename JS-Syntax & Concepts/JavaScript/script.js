@@ -146,21 +146,11 @@
 
 // JavaScript is a loosely typed language, meaning that you do not need to specify the data type of a variable when declaring it. However, you can convert a value from one data type to another using the following methods:
 
-// 1. toString() - This method converts a value to a string.
+// ⁡⁢⁣⁣toString()⁡ - This method converts a value to a string representation. It can be called on a value or object. 
+// ⁡⁢⁣⁣String()⁡ - This does the same thing, but can be called as a function, which is more convenient and considered best practice.
+// ⁡⁢⁣⁣Number()⁡ - This method converts a value to a number. It can be called on a value or object. There is no corresponding function for this method, which is weird, but that's how it is (javascript is weird).
+// ⁡⁢⁣⁣Boolean()⁡ - This method converts a value to a boolean. It can be called on a value or object. There is also no corresponding function for this method (again, javascript is weird).
 
-// 2. toNumber() - This method converts a value to a number.
-
-// 3. toBoolean() - This method converts a value to a boolean.
-
-// The following example shows how to convert a value from one data type to another in JavaScript.
-// var age = 25; // number
-// var ageAsString = age.toString(); // string
-// var found = true; // boolean
-// var foundAsNumber = Number(found); // this will print out 1, as 1=true and 0=false
-// var foundAsString = found.toString(); // string
-// var price = 19.95; // number
-// var priceAsString = price.toString(); // string
-// var priceAsBoolean = Boolean(price); // boolean will print as true
 //#endregion
 
 //#region OPERATORS IN JAVASCRIPT
@@ -205,3 +195,35 @@
 // !	Logical NOT !(x > 5 && x < 10)
 
 //#endregion
+
+//#region ARRAYS IN JAVASCRIPT
+
+// Arrays are an object data type that can hold multiple values. They are declared using square brackets []. Arrays are like lockers or boxes with compartments, where each compartment holds a value. Each compartment is called an element. The first element is at index 0, the second element is at index 1, and so on. The last element is at index length - 1. The length of an array is the number of elements it contains. Arrays can hold any data type, including strings, numbers, floats, booleans, objects, and even other arrays.
+
+//To access or change the value of an array, you need to add the square brackets [] after the array name, and inside the square brackets add the index of the element you want to access or change. 
+
+//For example, if we want to access the first element of the birds string array, we would write birds[0]. If we want to change the value of the first element from robin to eagle, we would write birds[0] = "eagle".
+
+// let birds = ["robin", "blue jay", "cardinal", "crow", "pigeon", "sparrow"];
+// console.log(birds);
+
+// birds[0] = "eagle"; // change the first element from robin to eagle
+// birds[5] = "vulture" // change the last element from sparrow to vulture
+// console.log(birds);
+
+// let numArray = [1, 2, 3, 4, 5];
+// console.log(numArray);
+
+// numArray[0] = 10; // change the first element from 1 to 10
+// numArray[4] = 50; // change the last element from 5 to 50
+// console.log(numArray);
+
+// JavaScript has a few built-in methods for manipulating arrays:
+
+// ⁡⁢⁣⁣push()⁡ - adds an element to the end of the array. For example, birds.push("hawk") will add the string "hawk" to the end of the birds array");
+// ⁡⁢⁣⁣pop()⁡ - removes the last element from the array. For example, birds.pop() will remove the last element from the birds array");
+// ⁡⁢⁣⁡⁢⁣⁣shift()⁡⁡ - removes the first element from the array. For example, birds.shift() will remove the first element from the birds array");
+// ⁡⁢⁣⁡⁢⁣⁡⁢⁣⁣unshift()⁡⁡⁡ - adds an element to the beginning of the array. For example, birds.unshift("hawk") will add the string "hawk" to the beginning of the birds array");
+// ⁡⁢⁣⁡⁢⁣⁡⁢⁣⁡⁢⁣⁡⁢⁣⁣splice()⁡ - removes elements from the array and optionally replaces them with new elements. For example, birds.splice(2, 1) will remove 1 element at index 2 from the birds array. The first argument is the index of the element to remove, and the second argument is the number of elements to remove. If you want to replace the removed elements with new elements, you can add them as additional arguments. For example, birds.splice(2, 1, "hawk", "eagle") will remove 1 element at index 2 from the birds array and replace it with the strings "hawk" and "eagle". The first argument is the index of the element to remove, the second argument is the number of elements to remove, and the third and fourth arguments are the elements to add.
+// ⁡⁢⁣⁣slice()⁡⁡⁡⁡⁡ - returns a new array containing a portion of the original array. For example, birds.slice(1, 4) will return a new array containing the elements at index 1, 2, and 3 from the birds array. The first argument is the index of the first element to include in the new array, and the second argument is the index of the last element to include in the new array. The element at the second index is not included in the new array.
+// ⁡⁢⁣⁡⁢⁣⁡⁢⁣⁡⁢⁣⁡⁢⁣⁡⁢⁣⁡⁢⁣⁣concat()⁡⁡⁡⁡⁡⁡⁡ - returns a new array containing the elements of the original array and the elements of the array(s) passed as arguments. For example, birds.concat(["hawk", "eagle"]) will return a new array containing the elements of the birds array and the elements of the array ["hawk", "eagle"].
