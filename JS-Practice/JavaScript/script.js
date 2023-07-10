@@ -71,15 +71,15 @@ console.log(numC);
 //     DISPLAY 'Number is odd'
 // END IF
 
-// let number = +prompt("Input a number.");
-// if (number % 2 == 0) 
-// {
-//   alert("The number is even.");
-// } 
-// else 
-// {
-//   alert("The number is odd.");
-// }
+let number = +prompt("Input a number.");
+if (number % 2 == 0) 
+{
+  alert("The number is even.");
+} 
+else 
+{
+  alert("The number is odd.");
+}
 
 // DECLARE year
 // IF year MOD 4 == 0 AND (year MOD 100 != 0 OR year MOD 400 == 0) THEN
@@ -89,15 +89,15 @@ console.log(numC);
 // END IF
 // ```
 
-// let year = +prompt("Enter a value for year.");
-// if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) 
-// {
-//     alert("Leap year.");
-// }
-// else 
-// {
-// alert("Not a leap year.")
-// }
+let year = +prompt("Enter a value for year.");
+if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) 
+{
+    alert("Leap year.");
+}
+else 
+{
+alert("Not a leap year.")
+}
 
 // 5. Loops:
 // ```pseudo
@@ -114,24 +114,24 @@ for (let i = 0; i < 101; i++) //go to 101, otherwise the sum counter will stop a
 }
 console.log(sum);
 
-// let sum = 0;                                     
-// for (i = 0; i <= 100; i++) {                    
-//   console.log(`${i} + ${sum} = ${i+sum}`)
-// sum = sum + i;
-// } // more detailed version of the code above, shows running total
+let sum = 0;                                     
+for (i = 0; i <= 100; i++) {                    
+  console.log(`${i} + ${sum} = ${i+sum}`)
+sum = sum + i;
+} // more detailed version of the code above, shows running total
 
 // WHILE password != correctPassword DO
 //     INPUT password
 // END WHILE
 // ```
 
-// let password = "password";
-// let correctPassword = "password";
-// while (password != correctPassword)
-// {
-//     password = prompt("Enter the password.");
-// }
-// console.log("You have entered the correct password.");
+let password = "password";
+let correctPassword = "password";
+while (password != correctPassword)
+{
+    password = prompt("Enter the password.");
+}
+console.log("You have entered the correct password.");
 //will keep prompting until the correct password is entered
 
 // 6. Subroutines:
@@ -223,21 +223,21 @@ console.log(max, min);
 //using a for loop
 //the math functions are more concise, but the for loops allows for more control if you are performing other operations
 
-// let numArray = [1, 2, 3, 4, 5];
-// let max = numArray[0];
-// let min = numArray[0];
-// for (let i = 0; i < numArray.length; i++)
-// {
-//   if (numArray[i] > max)
-//   {
-//     max = numArray[i];
-//   }
-//   if (numArray[i] < min)
-//   {
-//     min = numArray[i];
-//   }
-// }
-// console.log(max, min);
+let numArray2 = [1, 2, 3, 4, 5];
+let max2 = numArray2[0];
+let min2 = numArray2[0];
+for (let i = 0; i < numArray.length; i++)
+{
+  if (numArray[i] > max2)
+  {
+    max2 = numArray[i];
+  }
+  if (numArray[i] < min2)
+  {
+    min2 = numArray[i];
+  }
+}
+console.log(max2, min2);
 
 // DECLARE randomArray[100]
 // FOR i FROM 0 TO 99 DO
